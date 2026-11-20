@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2020.0.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/finframeless/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/finframeless/userstyles.css" type="text/css"/>
+  
+<link rel="stylesheet" type="text/css" href="assets/css/fusion_onlinehelp.css"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  <title>Mail Agent Integration</title>
+  <meta name="topic-status" content="Draft"/>
+  <meta name="template" content="assets/masterpages/Phoenix.htt"/>
+  
+  
+</head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <script type="text/javascript">//<![CDATA[
+
+   
+    function howto() {
+      document.getElementById("howto").classList.toggle("show");
+    }
+    function related() {
+      document.getElementById("related").classList.toggle("show");
+    }
+    function windows() {
+      document.getElementById("windows").classList.toggle("show");
+    }
+    function seealso() {
+      document.getElementById("seealso").classList.toggle("show");
+    }
+    function changes() {
+      document.getElementById("changes").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+   
+  
+//]]></script>
+  <p><br/>
+    
+  </p>
+  <h1><span data-field="title" data-format="default">Mail Agent Integration</span></h1>
+  <div>
+  <h2>Mail Agent Integration</h2>
+  <p>When a customer/member sends a text message to a Long Code, the system sends an email notification to all employees assigned to the Long Code. In order for an employee to get an email alert that a text message has been received, the employee must:</p>
+  <p class="Bullet_Normal">be mapped to the Long Code that receives a text (<a href="windows/employee_long_code_mapping_window.htm">Employee Long Code Mapping window</a>).</p>
+  <p class="Bullet_Normal">have a valid work email address entered on their employee record (Add New/Edit Existing Employee window &gt; Admin &amp; Security tab).</p>
+  <p>When a text message is sent to the Long Code, an email is sent the next time the Mail Agent service polls the GB_EMAIL table. </p>
+  <p><em><strong>Note: </strong></em>The polling interval is defined on the Email tab of the Institution Controls window in System Administration. Go to the <em>Mail Agent Installation Guide</em> included with the Mail Agent installer files to review setup details.</p>
+  <h3>Sample Email</h3>
+  <p class="drop-down1"><strong>Subject:</strong> Text Message Received</p>
+  <p class="drop-down1"><strong>Message Body: </strong>You have received a text message from [phone number], go to Customer/Member Management to view the details.</p>
+  <p> </p>
+  <div class="dropdown"><button class="dropbtn" onclick="related()">Related</button>
+    <div class="dropdown-content" id="related">
+      <p><a href="sms_text_messaging_interface.htm">SMS Text Messaging Interface</a></p>
+      <p><a href="texting_from_customer_member_management.htm">Customer/Member Management User Overview</a></p>
+    </div>
+  </div>
+  <div class="dropdown"><button class="dropbtn" onclick="howto()">How To</button>
+    <div class="dropdown-content" id="howto">
+      <p><a href="how_to/sending_and_receiving_text_messages.htm">Sending and Receiving Text Messages</a></p>
+      <p><a href="how_to/reviewing_sms_messaging_activity.htm">Reviewing SMS Messaging Activity</a></p>
+    </div>
+  </div>
+
+</div>
+  <p> </p>
+  <div>
+    <p style="text-align: right;">
+      <script type="text/javascript">
+        //<![CDATA[
+        var mailSubject = 'Fusion Phoenix: ' + document.title;
+        var mailBody = '\n\nURL: ' + location.href;
+        var mailDisplay = 'Send Feedback to feeback@mail.com';
+        document.write(
+          '<a href="mailto:feedback@mail.com' +
+          '?subject=' + escape(mailSubject) +
+          '&body=' + escape(mailBody) +
+          '">' + mailDisplay + '</a>'
+        );
+        //]]>
+      </script>
+    </p>
+  </div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "0_3"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

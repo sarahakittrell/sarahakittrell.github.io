@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ppfml version="2.00" project="Sample" type="4">
+  <contextmap>
+    
+  </contextmap>
+  <topiclist defaulttopic="sms_text_messaging_interface.htm">
+    
+    <topic>
+      sms_text_messaging_interface.htm
+    </topic>
+    
+    <topic>
+      texting_from_customer_member_management.htm
+    </topic>
+    
+    <topic>
+      mail_agent_integration.htm
+    </topic>
+    
+    <topic>
+      how_to\reviewing_sms_messaging_activity.htm
+    </topic>
+    
+    <topic>
+      how_to\sending_and_receiving_text_messages.htm
+    </topic>
+    
+    <topic>
+      windows\add_employees_window.htm
+    </topic>
+    
+    <topic>
+      windows\customer_member_contact_history_window.htm
+    </topic>
+    
+    <topic>
+      windows\edit_text_message_window.htm
+    </topic>
+    
+    <topic>
+      windows\employee_long_code_mapping_window.htm
+    </topic>
+    
+  </topiclist>
+  <filenamemap>
+    <filenameentry moniker="wh_languagetype">
+      <filename>
+        en_US
+      </filename>
+    </filenameentry>
+    <filenameentry moniker="wh_stoplist">
+      <filename>
+        whxdata/stopwords.xml
+      </filename>
+    </filenameentry>
+    <filenameentry moniker="startpage">
+      <filename>
+        index.htm
+      </filename>
+    </filenameentry>
+        
+  </filenamemap>
+</ppfml>

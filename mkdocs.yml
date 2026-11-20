@@ -1,0 +1,64 @@
+# Site configuration. Zensical reads this file directly.
+
+site_name: Sarah Kittrell | Technical Writer
+site_url: https://sarahakittrell.github.io/
+site_description: Technical writing portfolio for API documentation, content strategy, standards, and training.
+site_author: Sarah Kittrell
+copyright: "&copy; 2026 Sarah Kittrell"
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+  palette:
+    # Dark mode. Listed first, so the site always opens in dark mode.
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: lucide/sun
+        name: Switch to light mode
+    # Light mode. Visitors switch to it with the toggle in the header.
+    - scheme: default
+      primary: white
+      accent: indigo
+      toggle:
+        icon: lucide/moon
+        name: Switch to dark mode
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Work samples:
+      - samples/index.md
+      - Content strategy:
+          - Condition operators: samples/content-strategy/condition-operators.md
+          - Centrally manage root access: samples/content-strategy/account-root.md
+      - API documentation and standards:
+          - API style guide: samples/api/api-style-guide.md
+          - Installation guides: samples/api/install-guides.md
+      - Training:
+          - Documenting APIs workshop: samples/training/api-workshop.md
+      - Release notes:
+          - Reporting feature release note: samples/release-notes/reporting-feature.md
+      - Online help:
+          - RoboHelp help system: samples/online-help/index.md
+  - Accomplishments: accomplishments.md
+  - About this site: about-this-site.md
+  - Contact: contact.md

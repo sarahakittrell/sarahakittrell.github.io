@@ -1,0 +1,80 @@
+/* Site colors: links and accent (navigation highlight, hover, and focus).
+   Light mode uses #7719aa. The combined attribute selector overrides the
+   theme's built-in primary and accent palettes. */
+[data-md-color-scheme][data-md-color-primary][data-md-color-accent] {
+  --md-typeset-a-color: #7719aa;
+  --md-accent-fg-color: #7719aa;
+  --md-accent-fg-color--transparent: #7719aa1a;
+}
+
+/* Dark mode: a near-black charcoal background, #232325, and a lighter purple, #c48bea,
+   for links (contrast ratio about 6.2:1). The background variants keep the
+   theme's original transparency levels. */
+[data-md-color-scheme="slate"][data-md-color-primary][data-md-color-accent] {
+  --md-default-bg-color: #232325;
+  --md-default-bg-color--light: #2323258a;
+  --md-default-bg-color--lighter: #23232542;
+  --md-default-bg-color--lightest: #23232512;
+  --md-typeset-a-color: #c48bea;
+  --md-accent-fg-color: #c48bea;
+  --md-accent-fg-color--transparent: #c48bea1a;
+}
+
+/* Keep links the same color on hover and focus, and underline them */
+.md-typeset a:hover,
+.md-typeset a:focus {
+  color: var(--md-typeset-a-color);
+  text-decoration: underline;
+}
+
+/* Slide thumbnails on sample pages: a small image to the left of each
+   description. Select a thumbnail to open the full-size slide. */
+.md-typeset img.slide-thumb {
+  float: left;
+  width: 12rem;
+  margin: 0.2rem 1rem 0.5rem 0;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+}
+
+.md-typeset li:has(> a > img.slide-thumb) {
+  display: flow-root;
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset img.slide-thumb {
+    width: 8rem;
+  }
+}
+
+/* Theme toggle: show its name next to the icon so visitors notice it.
+   On narrow screens, only the icon shows. */
+.md-header__option[data-md-component="palette"] .md-header__button:not([hidden]) {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: auto;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid color-mix(in srgb, currentcolor 40%, transparent);
+  border-radius: 1rem;
+}
+
+.md-header__option[data-md-component="palette"] .md-header__button::after {
+  content: attr(title);
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 59.9375em) {
+  .md-header__option[data-md-component="palette"] .md-header__button:not([hidden]) {
+    padding: 0.2rem;
+    border: none;
+  }
+
+  .md-header__option[data-md-component="palette"] .md-header__button::after {
+    content: none;
+  }
+}

@@ -1,0 +1,20 @@
+# Build output
+site/
+.cache/
+
+# Python
+__pycache__/
+.venv/
+venv/
+
+# Source documents: publish cleared PDF or HTML versions only
+*.docx
+*.pptx
+*.doc
+*.ppt
+
+# Editor and OS files
+.vscode/
+Thumbs.db
+.DS_Store
+desktop.ini
